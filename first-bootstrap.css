@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10px;
+}
+
+ul{
+    display: table;
+    margin: 0 auto;
+}
