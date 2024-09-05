@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Table</title>
+    <style>
+        table {
+        border-collapse: collapse;
+        width: 30%;
+    }
+    td {
+        border: 1px solid #ddd;
+        padding: 2px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        function createTable() {
+            const rows = 10;
+            const cols = 10;
+            const table = document.createElement('table');
+
+            for (let r = 1; r <= rows; r++) {
+                const tr = document.createElement('tr');
+                for (let c = 1; c <= cols; c++) {
+                    const td = document.createElement('td');
+                    td.textContent = r * c;
+                    tr.appendChild(td);
+                }
+                table.appendChild(tr);
+            }
+
+            document.body.appendChild(table);
+        }
+
+        createTable();
+    </script>
+</body>
+</html>

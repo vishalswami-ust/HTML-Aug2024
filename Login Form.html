@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Events</title>
+    <script>
+        function sayGreetings(){
+            alert("Niraj Jain come down!");
+        }
+
+        function showSeason(){
+            var m = new Date().getMonth();
+            if(m >= 6 && m <=9){
+                alert("Monsoon Season");
+            }
+        }
+
+        function green(){
+            document.getElementById("greendiv").style.backgroundColor="green";
+            document.getElementById("greendiv").style.color="white";
+            document.getElementById("greendiv").style.fontSize="larger";
+            document.getElementById("greendiv").style.margin="20px";
+            document.getElementById("greendiv").style.fontSize="larger";
+            document.getElementById("greendiv").style.fontWeight="bold";
+            document.getElementById("greendiv").style.padding="10px";
+            document.getElementById("greendiv").style.textAlign="center";
+
+        }
+
+        function blue(){
+            document.getElementById("bluediv").style.backgroundColor="blue";
+            document.getElementById("bluediv").style.color="white";
+            document.getElementById("bluediv").style.fontSize="larger";
+            document.getElementById("bluediv").style.margin="20px";
+            document.getElementById("bluediv").style.fontWeight="bold";
+            document.getElementById("bluediv").style.padding="10px";
+            document.getElementById("bluediv").style.textAlign="center";
+        }
+
+
+        function validate(){
+            var un = document.getElementById("uid").value;
+            var p  = document.getElementById("pid").value;
+            if(p.length < 8){
+                alert("Length is small");
+                return false;
+            }
+            else{
+                alert("False Password")
+            return false;
+        
+        }
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="post" onsubmit="return validate()">
+        <fieldset>
+        <legend>Login Form</legend>
+        <label for="username">username</label>
+             <input type="text" name="username" id="uid"><br>
+        <label for="password">password</label>
+             <input type="password" name="password" id="pid"><br>
+        <input type="submit" value="Go" >
+        <input type="reset" value="clear">
+    </fieldset>
+
+
+
+
+
+
+
+        <!-- <input type="button" value="Greet" onclick="sayGreetings()">
+        <input type="button" value="season" onclick="showSeason()">
+        <input type="button" value="Green" onclick="green()">
+        <input type="button" value="Blue" onclick="blue()"> -->
+
+    </form>
+    <div id="greendiv" >
+        Hello! We are here!
+    </div>
+
+    <div id="bluediv" class="bluediv">
+        Hello! We are not here!
+    </div>
+</body>
+</html>

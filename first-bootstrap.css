@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10px;
+}
+
+ul{
+    display: table;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Grey Qo", cursive;
+    font-weight: 400;
+    font-style: bold;
+  }
+
+
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
